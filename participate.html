@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+	<title>Participate</title>
+
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> 
+  <style type="text/css">  
+
+
+
+  #dreamImage {display: block; width:100%; padding: 0; margin:0; background-image: url("images/shoppingcartwater.gif"); background-size: 100% ; background-repeat:no-repeat;}
+
+@keyframes 
+fadein { from {
+transform:scale(0, 0);
+}
+
+to { transform: scale(1, 1); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes 
+fadein { from {
+transform:scale(0, 0);
+}
+
+to { transform: scale(1, 1); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes 
+fadein { from {
+transform:scale(0, 0);
+}
+
+to { transform: scale(1, 1); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes 
+fadein { from {
+transform:scale(0, 0);
+}
+
+to { transform: scale(1, 1); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes 
+fadein { from {
+transform:scale(0, 0);
+}
+}
+@keyframes 
+fadein2 { from {
+transform:scale(1, 1);
+}
+
+to { transform: scale(0, 0); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes 
+fadein2 { from {
+transform:scale(1, 1);
+}
+
+to { transform: scale(0, 0); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes 
+fadein2 { from {
+transform:scale(1, 1);
+}
+
+to { transform: scale(0, 0); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes 
+fadein2 { from {
+transform:scale(1, 1);
+}
+
+to { transform: scale(0, 0); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes 
+fadein2 { from {
+transform:scale(1, 1);
+}
+}
+
+  body {
+  background-image: url("images/shoppingcartwater.gif");
+  background: #000000;
+  transition: all 4s;
+  overflow-x: hidden;
+  margin: 0 0 0 0;
+  font-family: Raleway; 
+  font-size: 14;
+  }
+  div.hidden {
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+}
+
+  h1 {
+    padding-left: 20px;
+    margin: 30px;
+    font-style: bold;
+    font-size: 50;
+  }
+  h2 {
+    padding-left: 30px;
+    margin: 30px;
+  }
+  h3{
+    padding-left: 40px;
+    margin: 30px;
+  }
+
+.hover { transform: scale(50, 50); }
+
+.rect1,
+.rect2,
+.rect3 {
+  /*-webkit-transition: all 800ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  -moz-transition: all 800ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  -o-transition: all 800ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  transition: all 800ms cubic-bezier(0.980, 0.005, 0.000, 0.995); /* custom */
+}
+
+.Menu {
+  background: #c4c9cc;
+  width: 200px;
+  /*-webkit-transition: all 100ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  -moz-transition: all 100ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  -o-transition: all 100ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  transition: all 100ms cubic-bezier(0.980, 0.005, 0.000, 0.995); /* custom */
+  height: 200px;
+  border-radius: 50%;
+  z-index: 99;
+  float: right;
+  margin-right: -155px;
+  margin-top: -100px;
+}
+
+.Menu2 {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+}
+
+#menulogo {
+  margin-right: 25px;
+  position: relative;
+  z-index: 999;
+  float: right;
+  /*-webkit-transition: all 100ms cubic-bezier(0.000, 1, 0.985, 0.990); /* older webkit */
+  /*-webkit-transition: all 100ms cubic-bezier(0.000, 1.650, 0.985, 0.990);
+  -moz-transition: all 100ms cubic-bezier(0.000, 1.650, 0.985, 0.990);
+  -o-transition: all 100ms cubic-bezier(0.000, 1.650, 0.985, 0.990);
+  transition: all 100ms cubic-bezier(0.000, 1.650, 0.985, 0.990); /* custom */
+  margin-top: 25px;
+}
+
+#menulogo:hover { -webkit-transform: scale(1.1, 1.1); }
+
+#menulogo:hover { cursor: pointer; }
+
+/*#home {
+  height: 100vh;
+  margin-top: -65px;
+  width: 100%;
+  background-image: url("images/shoppingcartwater.gif");
+  background-position: center;
+  background-size: cover;
+  font-family: 'Helvetica Neue', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+  text-transform: uppercase;
+  background-attachment: fixed;
+}
+
+#home h1 {
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0px 2px 0px rgba(0,0,0,0.5);
+  padding-top: 32vh;
+  font-size: 8vh;
+}*/
+
+.allMenu {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+}
+
+ul {
+  position: absolute;
+  z-index: 9999;
+  margin-top: -100px;
+  /*-webkit-transition: all 800ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  -moz-transition: all 800ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  -o-transition: all 800ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  transition: all 800ms cubic-bezier(0.980, 0.005, 0.000, 0.995); /* custom */
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 200px;
+  width: 80%;
+}
+
+ul li {
+  display: inline-block;
+  float: right;
+  /*-webkit-transition: all 400ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  -moz-transition: all 400ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  -o-transition: all 400ms cubic-bezier(0.980, 0.005, 0.000, 0.995);
+  transition: all 400ms cubic-bezier(0.980, 0.005, 0.000, 0.995); /* custom */
+  margin-left: -4px;
+  padding-left: 80px;
+  padding-right: 80px;
+  height: 100px;
+  line-height: 100px;
+}
+
+ul li:hover {
+  background: grey;
+  transform: scale(1, 1);
+  box-shadow: 5px 1px 10px rgba(0,0,0,0);
+}
+
+ul li a {
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+ul li a:hover { cursor: pointer; }
+
+	</style>
+ 	</head>
+
+
+
+
+<body id="dreamImage">
+  
+
+<div class="allMenu">
+  <ul class="ul">
+    <li class="lia"><a href="dreams.html" class="li">Home</a></li>
+    <li class="lia"><a href="about.html" class="li">About</a></li>
+    <li class="lia"><a href="participatefinal.html" class="li">Participate</a></li>
+    <li class="lia"><a href="sitemap.html" class="li">Site Map</a></li>
+  </ul>
+  <div class="Menu2"> <svg version="1.1" id="menulogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40px" height="36px" viewBox="0 0 40 36" enable-background="new 0 0 40 40" xml:space="preserve">
+    <rect class="rect1" fill="#FFF" width="40" height="5.392"/>
+    <rect class="rect2" x="0" y="12" fill="#FFF" width="40" height="5.393" />
+    <rect class="rect3" x="0" y="24" fill="#FFF" width="40" height="5.393"/>
+    </svg>
+    <div class="Menu"> </div>
+  </div>
+</div>
+<section id="home" data-type="background" data-speed="10">
+  <div class="header">
+  </div>
+</section>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> 
+<script>
+$(document).ready(function() {
+	var $Menu = $('.Menu');
+    $('#menulogo').click(function() {
+		if($Menu.hasClass('hover')){
+		$Menu.removeClass('hover');
+				$('.rect1').css('opacity','1');
+		$('.rect2').css('transform','rotate(0deg) translate(0px, 0px)');
+		$('.rect3').css('transform','rotate(0deg) translate(0px, 0px)');
+		$('#menulogo').css('margin-top','25px');
+				$('.ul').css('margin-top','-100px');
+		}else{
+		$Menu.addClass('hover');
+		$('.rect1').css('opacity','0');
+		$('.rect2').css('transform','rotate(45deg) translate(6px, -15px)');
+		$('.rect3').css('transform','rotate(-45deg) translate(-20px, 0px)');
+		$('.ul').css('margin-top','0px');
+		$('#menulogo').css('margin-top','35px');
+		
+			}
+    });	
+});
+
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div class="hidden">
+  <h1>Participate in this project!</h1>
+  <h2>In time, I hope to add functionality for you to upload files here. But for now, if you'd like to add your voice or vision to this project, I welcome you to:</h2>
+  <h3>*Record a dream you had as an mp3, wav or aiff file.
+    <br>
+    *Take a dreamy digital or analog photograph (and/or make a gif).
+    <br>
+    *Then, email your audio or visual files to me at rachelab266@gmail.com</h3>
+ 
+     <h2>Alternately, if you live in NYC, we can arrange to meet and I can record your dream. You can reach me at rachelab266@gmail.com</h2>
+    </div>
+
+
+
+</body>
+</html>
