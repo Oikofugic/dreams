@@ -5,7 +5,7 @@
     
   <title>Participate</title>
 
-
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
   <link href="dream.css" rel="stylesheet" type="text/css"> 
   <style type="text/css">  
   </style>
@@ -15,27 +15,43 @@
 <body id="dreamImage">
   
 
-<div class="allMenu">
-  <ul class="ul">
-    <li class="lia"><a href="index.html" class="li">Home</a></li>
-    <li class="lia"><a href="about.html" class="li">About</a></li>
-    <li class="lia"><a href="participatefinal.html" class="li">Participate</a></li>
-    <li class="lia"><a href="sitemap.html" class="li">Site Map</a></li>
-  </ul>
-  <div class="Menu2"> <svg version="1.1" id="menulogo" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="40px" height="36px" viewbox="0 0 40 36" enable-background="new 0 0 40 40" xml:space="preserve">
-    <rect class="rect1" fill="#FFF" width="40" height="5.392"/>
-    <rect class="rect2" x="0" y="12" fill="#FFF" width="40" height="5.393" />
-    <rect class="rect3" x="0" y="24" fill="#FFF" width="40" height="5.393"/>
+<!-- Hamburger (closed menu) -->
+  <div id="menu-open-button">
+    <svg version="1.1" class="menulogo" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="40px" height="36px" viewbox="0 0 40 36" enable-background="new 0 0 40 40" xml:space="preserve">
+      <rect class="rect1" fill="#FFF" width="40" height="5.392"/>
+      <rect class="rect2" x="0" y="12" fill="#FFF" width="40" height="5.393" />
+      <rect class="rect3" x="0" y="24" fill="#FFF" width="40" height="5.393"/>
     </svg>
-    <div class="Menu"> </div>
   </div>
-</div>
+
+  
+ <!-- Open Menu -->
+  <div id="new-menu">
+    <ul id="menu-list">
+      <li><a href="index.html" class="li">Home</a></li>
+      <li><a href="about.html" class="li">About</a></li>
+      <li><a href="participate.html" class="li">Participate</a></li>
+      <li><a href="sitemap.html" class="li">Site Map</a></li>
+    </ul>
+    <div id="menu-close-button">
+      <svg version="1.1" class="menulogo" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="36px" viewbox="0 0 40 36" enable-background="new 0 0 40 40" xml:space="preserve">
+        <rect class="rect1" fill="#FFF" width="40" height="5.392" style="opacity: 0;"></rect>
+        <rect class="rect2" x="0" y="12" fill="#FFF" width="40" height="5.393" style="transform: rotate(45deg) translate(6px, -15px);"></rect>
+        <rect class="rect3" x="0" y="24" fill="#FFF" width="40" height="5.393" style="transform: rotate(-45deg) translate(-20px, 0px);"></rect>
+      </svg>
+    </div>
+  </div>
+  
+<!-- End Menu -->
+  
 <section id="home" data-type="background" data-speed="10">
   <div class="header">
   </div>
 </section>
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script> 
+<script src="./menu.js"></script>
+
 <script>
 $(document).ready(function() {
   var $Menu = $('.Menu');
